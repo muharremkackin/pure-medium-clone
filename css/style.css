@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    user-select: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    padding: 10px 16px;
+    border-radius: 9999px;
+}
+
+.btn-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.btn.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.medium-template .container {
+    width: 1192px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+  
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  
+  .col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .h-7 {
+    height: 1.75rem;
+  }
+  
+  .grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  
+  .bg-gray-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  }
+  
+  .bg-gray-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+  }
+  
+  .bg-gray-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  }
+  
+  .badge {
+    font-size: 12px;
+    padding: 4px 8px;
+    transition: background 300ms ease;
+  }
+
+  .badge.badge-gray {
+    color: rgba(117, 117, 117, 1);
+    background-color: rgba(242, 242, 242, 1);
+  }
+  .badge.badge-rounded {
+    border-radius: 9999px;
+  }
+  .badge.badge.badge-gray:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  .tag {
+    padding:6px 16px;
+    border: 1px solid rgba(230, 230, 230, 1);
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.032em;
+    color: rgba(117, 117, 117, 1);
+  }
+/* begin::Header */
+
+.medium-template > header {
+    height: 75px;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+    position: fixed;
+    left: 0; 
+    right: 0;
+    top:0;
+}
+
+.medium-template .header-area {
+    width: 100%;
+    height: 72px;
+    background-color: #ffc017;
+}
+
+.medium-template > header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.medium-template > header > div {
+    height: 100%;
+}
+
+.medium-template > header .header-container {
+    height: 100%;
+}
+
+.medium-template > header .header-container nav ul {
+    display: flex;
+}
+
+.medium-template > header .header-container nav ul li {
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+.medium-template .main-logo svg {
+    height: 25px;
+}
+
+/* end::Header */
+/* begin::Hero */
+.medium-template section.hero {
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+}
+.medium-template .hero-container {
+    padding-top: 93px;
+    padding-bottom: 92px;
+}
+.medium-template .hero-container h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: normal;
+    font-size: 106px;
+    letter-spacing: -1px;
+}
+.medium-template .hero-container .content {
+    width: 600px;
+}
+.medium-template .hero-container h3 {
+    font-size: 24px;
+    font-weight: normal;
+    width: 80%;
+}
+.medium-template .hero-container button {
+    font-size: 18px;
+    padding: 8px 48px;
+    font-weight: 500;
+}
+.medium-template .hero-container .heading-2 {
+    margin-bottom: 35px;
+}
+.medium-template .hero-container .heading-3 {
+    margin-bottom: 50px;
+}
+/* end::Hero */
+/* begin::Trending */
+.medium-template .trending .trending-container {
+    padding-bottom: 16px;
+    padding-top: 40px;
+}
+.medium-template .trending .trending-container > h4 {
+    display: flex;
+    align-items: center;
+    color: rgba(41, 41, 41, 1);
+    font-size: 12px;
+    letter-spacing: 1px;
+    
+}
+.medium-template .trending .trending-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+.medium-template .trending .trending-icon svg {
+    width: 16px;
+    height: 16px;
+}
+.medium-template .trending .trending-container .trending-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    justify-content: space-between;
+    
+}
+.medium-template .trending .trending-container .trending-cards > div {
+    width: 32%;
+    flex-grow: 0;
+    margin-top: 20px;
+}
+.medium-template .trending .trending-container .trending-cards > .card  {
+    display: flex;
+    align-items: flex-start;
+}
+.medium-template .trending .trending-container .trending-cards > .card .no  {
+    font-weight: 700;
+    font-size: 30px;
+    color: rgba(230, 230, 230, 1);
+    margin-right: 16px;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content  {
+    padding-top: 8px;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .name a h4  {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(41, 41, 41, 1);
+    font-size: 13px;
+    font-weight: 500;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .name a span  {
+    display: inline-flex;
+    align-items: center;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .name a span:first-child  {
+    margin-right: 8px;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .name img  {
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    object-fit: cover;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .name,
+.medium-template .trending .trending-container .trending-cards > .card .content .title  {
+    margin-bottom: 8px;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .title h2  {
+    color: rgba(41, 41, 41, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .info  {
+   font-size: 13px;
+   display: inline-flex;
+   align-items: center;
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .info span  {
+   color: rgba(117, 117, 117, 1);
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .info span:nth-child(2)  {
+   width: 2px;
+   height: 2px;
+   border: 9999px;
+   background-color: rgba(117, 117, 117, 1);
+}
+.medium-template .trending .trending-container .trending-cards > .card .content .info span:not(:last-child)  {
+    margin-right: 4px;
+}
+.medium-template .trending  {
+    border: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+/* end::Trending */
+/* begin::MainContent */
+.medium-template .main .main-container {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    color: rgba(41, 41, 41, 1);
+}
+.medium-template .main .main-container main article:not(:last-child) {
+    margin-bottom: 48px;
+}
+.medium-template .main .main-container main article {
+    display: flex;
+}
+.medium-template .main .main-container main article div:first-child {
+    padding-right: 20px;
+}
+.medium-template .main .main-container main article header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+.medium-template .main .main-container main article header h2 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+}
+.medium-template .main .main-container main article section {
+    padding-bottom: 8px;
+}
+.medium-template .main .main-container main article section h3 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(117, 117, 117, 1);
+}
+.medium-template .main .main-container main article .author {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.medium-template .main .main-container main article .author span:first-child {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+.medium-template .main .main-container main article .author img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 99999px;
+    object-position: top;
+}
+.medium-template .main .main-container main article .author > span:nth-child(2) {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(41, 41, 41, 1);
+    font-size: 13px;
+    font-weight: 500;
+}
+.medium-template .main .main-container main article footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.medium-template .main .main-container main article footer div:first-child {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.medium-template .main .main-container main article footer div:first-child span:not(:last-child) {
+    margin-right: 4px;
+}
+.medium-template .main .main-container main article footer div:first-child .dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: black;
+}
+.medium-template .main .main-container main article .article-image img {
+    width: 200px;
+    height: 134px;
+    object-fit: cover;
+    object-position: center;
+}
+.medium-template .main .main-container aside .tag-container p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+}
+.medium-template .main .main-container aside .tag-container .tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(230, 230, 230, 1)
+}
+.medium-template .main .main-container aside .tag-container .tags .tag:not(:last-child) {
+    margin-right: 8px;
+}
+.medium-template .main .main-container aside .tag-container .tags .tag {
+    margin-bottom: 8px;
+}
+.medium-template .main .main-container aside footer .footer-container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.medium-template .main .main-container aside footer .footer-container ul li a {
+    font-size: 13px;
+    color: rgba(117, 117, 117, 1);
+    line-height: 14px;
+}
+.medium-template .main .main-container aside footer .footer-container {
+    padding-top: 28px;
+}
+.medium-template .main .main-container aside footer .footer-container ul li {
+    margin-bottom: 8px;
+    margin-right: 16px;
+}
+/* end::MainContent */
